@@ -13,20 +13,7 @@ app.get('/', (req, res) => {
     res.sendFile('index.html')
 })
 
-
-
-
-
-
-
-
-
-// // Cấu hình thư mục views
-// app.set('views', path.join(__dirname, 'views'));
-// // Cấu hình để gửi file tĩnh từ thư mục public
-// app.use(express.static(path.join(__dirname, 'views')));
-// // Route để render file HTML từ thư mục views
-// app.get('/', (req, res) => {
-//     res.sendFile('index.html');  // Giả sử bạn có file views/index.ejs
-// });
-app.listen(port, () => console.log("App is listening at port: ", port))
+app.listen(port, () => {
+    // res.sendFile('index.html')
+    console.log("App is listening at port: ", port)
+})
